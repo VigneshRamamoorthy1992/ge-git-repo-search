@@ -1,5 +1,7 @@
 ## steps for getting started
 
+DEMO [git-repo-search](https://git-repo-search-ge.herokuapp.com/)
+
 ### `git clone https://github.com/VigneshRamamoorthy1992/ge-git-repo-search.git`
 
 In the project directory, you can run:

@@ -1,0 +1,110 @@
+.header {
+    background-color: rgb(22, 27, 34);
+    min-height: 62px;
+    color: lightgrey;
+    position: sticky;
+    top: 0;
+}
+
+.gitHubIcon {
+    font-size: 40px;
+    margin: 0px 10px 0px 10px;
+}
+
+.searchField {
+    width: inherit;
+    height: 40px;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid lightgrey;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: black;
+    border: none;
+    color: darkgrey;
+}
+
+.suggestions {
+    margin-top: 3%;
+    margin-left: 16.3%;
+    width: 38%;
+    position: absolute;
+    border-radius: 4px;
+    z-index: 1;
+    background: white;
+    overflow: auto;
+    max-height: 300px;
+    background: black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.suggestionsItem {
+    padding: 10px;
+    color: grey;
+    border-bottom: 1px solid #2f4f4f5e;
+    font-size: 14px;
+}
+.suggestionsItem:hover {
+    cursor: pointer;
+    color: white;
+    background: cornflowerblue;
+}
+a {
+    color: unset;
+}
+a:hover {
+    color: white;
+}
+
+.searchIcon {
+    padding: 12px;
+    padding-top: 6px;
+    background: black;
+    border-radius: 4px;
+    margin-left: 4px;
+}
+
+.searchIcon:hover {
+    cursor: pointer;
+    background:#00000080;
+}
+
+.snackbarArea {
+    position: fixed;
+    bottom: 50px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.snackbar {
+    background-color: darkred;
+    padding: 8px;
+    border-radius: 5px;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.sortFiled {
+    height: 40px;
+    background: black;
+    color: lightslategrey;
+    border: none;
+    padding: 10px;
+    outline: none;
+    font-size: 15px;
+    margin-left: 15px;
+    border-radius: 4px;
+}
+
+.headerText {
+    font-size: 14px;
+    color: darkgrey;
+    font-weight: 600;
+}
+
+.sortBy{
+    padding-left: 20px;
+}
+

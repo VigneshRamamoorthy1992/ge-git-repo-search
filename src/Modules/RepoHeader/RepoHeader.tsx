@@ -41,15 +41,7 @@ class RepoHeader extends React.Component<Props, State> {
       page: 1,
       sortBy: "full_name",
       order: "asc",
-      sortFields: [
-        "full_name",
-        "name",
-        "forks",
-        "size",
-        "watchers",
-        "created_at",
-        "updated_at",
-      ],
+      sortFields: ["full_name", "name", "forks"],
       showSnackBar: false,
     };
   }

@@ -148,9 +148,14 @@ class RepoHeader extends React.Component<Props, State> {
           <div className="col-2 pt-5">
             <div className="innerRow">
               <div className="col-3 p-0">
-                <i className="fab fa-github gitHubIcon" data-testid="app-logo"></i>
+                <i
+                  className="fab fa-github gitHubIcon"
+                  data-testid="app-logo"
+                ></i>
               </div>
-              <div className="col-9 pt-8" data-testid="app-header-text">GitHub Repo Search</div>
+              <div className="col-9 pt-8" data-testid="app-header-text">
+                GitHub Repo Search
+              </div>
             </div>
           </div>
           <div className="col-5 pt-5">
@@ -165,9 +170,11 @@ class RepoHeader extends React.Component<Props, State> {
                   this.search(event.target.value);
                 }}
                 onBlur={() => {
-                  this.setState({
-                    showSuggestions: false,
-                  });
+                  setTimeout(() => {
+                    this.setState({
+                      showSuggestions: false,
+                    });
+                  }, 500);
                 }}
                 onKeyDown={(e: any) => {
                   if (e.which === 13) {
@@ -182,7 +189,10 @@ class RepoHeader extends React.Component<Props, State> {
                   this.props.showSearchResultRS(true);
                 }}
               >
-                <i className="fas fa-search padtop-2" data-testid="search-icon"></i>
+                <i
+                  className="fas fa-search padtop-2"
+                  data-testid="search-icon"
+                ></i>
               </span>
             </div>
           </div>
@@ -194,14 +204,12 @@ class RepoHeader extends React.Component<Props, State> {
                     className="row suggestionsItem"
                     key={`${item.id}-suggest`}
                   >
-                    <div className="col-1">
-                      <i className="fas fa-hammer"></i>
-                    </div>
-                    <div className="col-11">
-                      <a href={item.clone_url} target="_blank">
-                        {item.full_name}
-                      </a>
-                    </div>
+                    <a href={item.clone_url} target="_blank">
+                      <div className="col-1">
+                        <i className="fas fa-hammer"></i>
+                      </div>
+                      <div className="col-11">{item.full_name}</div>
+                    </a>
                   </div>
                 );
               })}

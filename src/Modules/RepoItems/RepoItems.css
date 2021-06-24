@@ -7,10 +7,6 @@
     width: 100%;
   }
 
-  .repoCard:hover {
-    cursor: pointer;
-  }
-
   .cardImg {
       width: 10%;
   }
@@ -37,6 +33,10 @@
     font-size: 14px;
     padding-top: 6px;
     padding-bottom: 6px;
+  }
+
+  .cardElement {
+    overflow-x: hidden;
   }
 
   .metaInfo {

@@ -81,6 +81,13 @@
   .sortBy {
     padding-left: 0px !important;
   }
+  .img {
+    width: 58px !important;
+    height: 58px !important;
+  }
+  .repoCard{
+    padding: 0px !important;
+  }
 }
 
 .innerRow{

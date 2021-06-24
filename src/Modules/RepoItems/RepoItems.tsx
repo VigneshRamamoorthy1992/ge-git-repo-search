@@ -21,7 +21,7 @@ class RepoItems extends React.Component<Props, State> {
     return (
       <div className="container" data-testid="container-items">
         {this.props.searchRS.showSearchResult && (
-          <div className="row" id="repoElement" data-testid="repo-element">
+          <div className="row cardElement" id="repoElement" data-testid="repo-element">
             {this.props.searchRS.search?.data?.items.map(
               (item: any, index: number) => {
                 return (
